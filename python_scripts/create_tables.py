@@ -1,4 +1,4 @@
-import cassandra
+from cassandra.cluster import Cluster
 from sql_queries import *
 
 
@@ -24,7 +24,7 @@ def create_keyspace(session):
         print(e)
 
 
-def drop_tables(session)
+def drop_tables(session):
     """
     Drops each table using the queries in `drop_table_queries` list.
     """
